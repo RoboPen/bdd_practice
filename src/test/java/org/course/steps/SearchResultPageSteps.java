@@ -7,7 +7,7 @@ import org.testng.Assert;
 import static org.course.steps.BaseSteps.PAGES_STORAGE;
 
 public class SearchResultPageSteps {
-    @Then("{string} on {string} is printed")
+    @Then("{string} on {string} is displayed")
     public void onIsPrinted(String message, String pageName) {
         String resultInfo = ((SearchResultPage) PAGES_STORAGE.get(pageName))
                 .getTextForIncorrectProductName();
